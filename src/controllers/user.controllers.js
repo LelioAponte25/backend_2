@@ -46,7 +46,7 @@ const update = catchError(async(req, res) => {
         {where: {id}, returning:true}
         
     )
-    return res.json(user)
+    return res.json(user[1][0])
 })
 
 
